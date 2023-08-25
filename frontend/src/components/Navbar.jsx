@@ -14,7 +14,7 @@ const NavBar = () => {
     // this function routes to the login page when the button is clicked
     const loginBtn = () => {
         return(
-            navigate('/Login')
+            navigate('/login-page')
         )
     }
     
@@ -31,7 +31,7 @@ const NavBar = () => {
             </div>
             <div className='flex space-x-12 pr-8 text-lg'>
                 <button className='bg-blue text-white py-0.5 px-6 rounded' onClick={loginBtn}>Login</button>
-                <span className='text-gray'><NavLink to="signup" style={activeBtn}>Sign Up</NavLink></span>
+                <span className='text-gray'><NavLink to="signup-page" style={activeBtn}>Sign Up</NavLink></span>
             </div>
         </div>
     )

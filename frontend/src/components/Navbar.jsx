@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {
+    const navigate = useNavigate();
 
     // this function changes the color of the active button
     const activeBtn = ({isActive}) => {
@@ -9,6 +10,14 @@ const NavBar = () => {
             color: isActive? "blue": "#38383b"
         }
     }
+
+    // this function routes to the login page when the button is clicked
+    const loginBtn = () => {
+        return(
+            navigate('/Login')
+        )
+    }
+    
     return(
         <div className='flex flex-row justify-between p-4'>
             <div className='pl-8'>
@@ -21,7 +30,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className='flex space-x-12 pr-8 text-lg'>
-                <button className='bg-blue text-white py-0.5 px-6 rounded'>Login</button>
+                <button className='bg-blue text-white py-0.5 px-6 rounded' onClick={loginBtn}>Login</button>
                 <span className='text-gray'><NavLink to="signup" style={activeBtn}>Sign Up</NavLink></span>
             </div>
         </div>

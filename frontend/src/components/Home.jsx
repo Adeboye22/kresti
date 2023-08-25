@@ -5,8 +5,10 @@ const Home = () => {
     return(
         <div className='bg-blue min-h-screen'>
             <main>
-                <div className='h-100 overflow-hidden'>
-                    <Carousel />
+                <div className='bg-gradient-to-l from-yellow-100 from-100% to-white  h-100 overflow-hidden relative'>
+                    <div className='h-full absolute mix-blend-darken'>
+                        <Carousel />
+                    </div>
                 </div>
                 <div>
                     <span className='min-h-96'>get me</span>

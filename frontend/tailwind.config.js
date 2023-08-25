@@ -7,8 +7,6 @@ export default module.exports = withMT({
     colors:{
       "blue": "#1a1e49",
       "gray": "#38383b",
-      "black": "#000000",
-      "white": "#ffffff"
     },
     extend: {
       spacing:{

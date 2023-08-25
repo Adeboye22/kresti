@@ -10,24 +10,24 @@ function CarouselCustomNavigation() {
   return (
     <Carousel transition={{ duration: 2 }}>
       <img
-        src={Img1}
+        src={Img3}
         alt="image 1"
-        className="h-full w-full object-cover blur-sm"
+        className="h-full w-full object-cover"
       />
       <img
         src={Img2}
         alt="image 2"
-        className="h-full w-full object-cover blur-sm"
+        className="h-full w-full object-cover"
       />
       <img
-        src={Img3}
+        src={Img1}
         alt="image 3"
-        className="h-full w-full object-cover blur-sm"
+        className="h-full w-full object-cover"
       />
      <img
         src={Img4}
         alt="image 4"
-        className="h-full w-full object-cover blur-sm"
+        className="h-full w-full object-cover"
       />
     </Carousel>
   );

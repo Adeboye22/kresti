@@ -4,11 +4,10 @@ import Carousel from './Carousel'
 const Home = () => {
     return(
         <div className='bg-blue min-h-screen'>
-            <main >
-                <div className='h-100 overflow-hidden relative'>
+            <main>
+                <div className='h-100 overflow-hidden'>
                     <Carousel />
                 </div>
-                <div className='h-100 bg-blue absolute'></div>
                 <div>
                     <span className='min-h-96'>get me</span>
                     <div>jay</div>

@@ -12,22 +12,22 @@ function CarouselCustomNavigation() {
       <img
         src={Img1}
         alt="image 1"
-        className="h-full w-full object-cover bg-blend-lighten"
+        className="h-full w-full object-cover blur-sm"
       />
       <img
         src={Img2}
         alt="image 2"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover blur-sm"
       />
       <img
         src={Img3}
         alt="image 3"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover blur-sm"
       />
      <img
         src={Img4}
         alt="image 4"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover blur-sm"
       />
     </Carousel>
   );

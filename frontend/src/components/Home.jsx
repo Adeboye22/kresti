@@ -10,7 +10,7 @@ import Review1 from '../assets/Review1.jpg';
 import Review2 from '../assets/Review2.jpg';
 import Review3 from '../assets/Review3.jpg';
 import Review4 from '../assets/Review4.jpg';
-import { FaStar, FaPhone, FaWhatsapp } from 'react-icons/fa'
+import { FaStar, FaPhone, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
     // This function redirects users to place a call when the button is clicked
@@ -155,9 +155,9 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col gap-8'>
                         <h2 className='text-lg font-bold text-gray text-center'>Email Us</h2>
-                        <span className='text-gray text-center'>send us an email <em>info@krestiinsuranceagency.com</em></span>
+                        <span className='text-gray text-center'>Send us an email <em className='text-red-700'>info@krestiinsuranceagency.com</em></span>
                         <div className='flex flex-row bg-blue rounded p-2 justify-center'>
-                            <button className='bg-white rounded p-1 mr-4' onClick={Email}><FaPhone className='text-blue'/></button>
+                            <button className='bg-white rounded p-1 mr-4'><FaEnvelope className='text-red-700'/></button>
                             <span className='text-white'>Click to Call</span>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Carousel from './Carousel';
 import SvgThumb from '../assets/SvgThumb.png';
 import SvgCar from '../assets/SvgCar.png';
@@ -11,6 +11,9 @@ import Review2 from '../assets/Review2.jpg';
 import Review3 from '../assets/Review3.jpg';
 import Review4 from '../assets/Review4.jpg';
 import { FaStar, FaPhone, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
     // This function redirects users to place a call when the button is clicked
@@ -26,6 +29,11 @@ const Home = () => {
             window.open("https://wa.link/nf81hs")
         )
     }
+    
+    // This hook initiallizes the animate on scroll library
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return(
         <div className='bg-blue min-h-screen'>
@@ -60,13 +68,13 @@ const Home = () => {
                         <h1 className='text-center text-gray text-xl font-bold'>What would you like to insure?</h1>
                         <div className='flex flex-row justify-between px-16 pt-16'>
                             <div className='flex flex-col'>
-                                <div className='rounded-full overflow-hidden outline outline-blue outline-offset-2 outline-2'>
+                                <div className='rounded-full overflow-hidden outline outline-blue outline-offset-2 outline-2' data-aos="flip-left">
                                     <img src={Img3} alt="" className='w-52 h-52 object-cover' />
                                 </div>
                                 <span className='text-center pt-8 text-gray text-lg'>Automobile</span>
                             </div>
                             <div className='flex flex-col'>
-                                <div className='rounded-full overflow-hidden outline outline-blue outline-offset-2 outline-2'>
+                                <div className='rounded-full overflow-hidden outline outline-blue outline-offset-2 outline-2' data-aos="flip-right">
                                     <img src={Img10} alt="" className='w-52 h-52 object-cover' />
                                 </div>
                                 <span className='text-center pt-8 text-gray text-lg'>House</span>
@@ -74,7 +82,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='p-12 flex flex-row justify-evenly'>
+                <section className='p-12 flex flex-row justify-evenly' data-aos="fade-up">
                     <div className='bg-white rounded h-96 w-60 flex flex-col'>
                         <div className='rounded-full overflow-hidden h-40 w-40  self-center outline outline-blue outline-offset-2 outline-2 my-4'>
                             <img src={Review1} alt="" className='object-cover' />
@@ -136,7 +144,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='bg-white p-12 flex flex-row justify-evenly'>
+                <section className='bg-white p-12 flex flex-row justify-evenly' data-aos="zoom-in">
                     <div className='flex flex-col gap-8'>
                         <h2 className='text-lg font-bold text-gray text-center'>Customer Care</h2>
                         <span className='text-gray text-center'>Available from Monday- Friday: 7am-7pm</span>

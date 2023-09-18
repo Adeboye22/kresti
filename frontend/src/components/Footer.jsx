@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return(
-        <div className='bg-blue p-12 flex flex-row justify-evenly'>
+        <div className='sm:flex-col sm:gap-12 md:flex-col md:gap-12 bg-blue p-12 flex flex-row justify-evenly'>
            <div>
                 <h3 className='text-green-50 font-black mb-2'>Products & Solutions</h3>
                 <ul>

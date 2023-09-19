@@ -21,7 +21,7 @@ const NavLinks = () => {
     
     return(
         <div className='md:p-0 flex flex-row justify-between p-4'>
-            <div className='sm:hidden md:hidden pl-8'>
+            <div className='sm:hidden md:hidden block pl-8'>
                 <h1 className='text-xl text-blue font-extrabold'><NavLink to="/">Kresti Insurance Agency LLC</NavLink></h1>
             </div>
             <nav className='sm:flex sm:flex-col sm:gap-4 sm:justify-center md:flex-col md:pr-0 md:gap-4 md:w-screen flex flex-row pr-8'>
@@ -50,6 +50,9 @@ const NavBar = () => {
 
     return(
         <div>
+            <div>
+                <NavLinks/>
+            </div>
             <div className='md:block md:text-xl md:p-8 md:flex md:flex-row md:justify-between hidden'> 
                 <h1 className='sm:hidden  md:text-2xl md:text-blue md:font-extrabold '><NavLink to="/">Kresti Insurance Agency LLC</NavLink></h1>  
                 <button onClick={toggleBar}>{isOpen ? <FaTimes className='text-red-700'/> : <FaBars className='text-blue'/>}</button>

@@ -50,7 +50,7 @@ const NavBar = () => {
 
     return(
         <div>
-            <div>
+            <div className='sm:hidden md:hidden'>
                 <NavLinks/>
             </div>
             <div className='md:block md:text-xl md:p-8 md:flex md:flex-row md:justify-between hidden'> 
